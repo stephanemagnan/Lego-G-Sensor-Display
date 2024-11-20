@@ -47,14 +47,15 @@ I had some intermittent issues with the [Arduino IDE](https://www.arduino.cc/en/
 
 Sometimes uploading to the boards fails for some reason (or hangs up). It this happens, double-tap the reset button on the boards, then select the newly changed COM port. Re-upload and it should work. You may need to close the Serial Monitor if issues persist.
 
-# Required Hardware
-2x [Seeed Xiao BLE Sense nRF52840](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html)
-1x [Seeed Studio Round Display for XIAO](https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html)
-1x Small Li-Poly battery
-1x Small SPST Toggle Switch
-1x External 5V power supply with USB C
+# Hardware
+Required Components:
+- 2x [Seeed Xiao BLE Sense nRF52840](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html)
+- 1x [Seeed Studio Round Display for XIAO](https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html)
+- 1x Small Li-Poly battery
+- 1x Small SPST Toggle Switch
+- 1x External 5V power supply with USB C
 
-# Hardware Setup
-**Board 1** had an Li-Poly battery soldered on the back with a small SPST toggle switch on the positive line. The small SPST toggle must be set to On when using or charging the device.
-**Board 2** must be plugged in to the Round Display. An external power supply must be plugged into Board 2. The On/Off switch on the Round Display must be set to On to receive power from the board. Otherwise, it does have a battery port on the back (not used here).
+Setup:
+- **Board 1** had an Li-Poly battery soldered on the back with a small SPST toggle switch on the positive line. The small SPST toggle must be set to On when using or charging the device.
+- **Board 2** must be plugged in to the Round Display. An external power supply must be plugged into Board 2. The On/Off switch on the Round Display must be set to On to receive power from the board. Otherwise, it does have a battery port on the back (not used here).
 
