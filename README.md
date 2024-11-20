@@ -43,7 +43,13 @@ Round Display:
 - For non-Mbed boards: No info.
 - **USE THIS ONE:** For non-Mbed boards, follow the official [Seeed Setup Guide](https://wiki.seeedstudio.com/get_start_round_display/) and [Seeed Tutorial](https://wiki.seeedstudio.com/seeedstudio_round_display_usage/) which uses the [Seeed_Arduino_RoundDisplay](https://github.com/Seeed-Studio/Seeed_Arduino_RoundDisplay), [SeeedStudio_lvgl](https://github.com/Seeed-Projects/SeeedStudio_lvgl), and [SeeedStudio_TFT_eSPI](https://github.com/Seeed-Projects/SeeedStudio_TFT_eSPI) Libraries.
 
+
+## Other Info
 I had some intermittent issues with the [Arduino IDE](https://www.arduino.cc/en/software). [Version 3.2.1](https://github.com/arduino/arduino-ide/releases) on Windows worked for me. 
+
+There was an issue early on while compiling where one of the librairies had to be modified by editing the lv_conf.h file and placing it in the libraries folder (one level above its default location). There may also have been a compilation error which required moving two subdirectories to a different location in the library folder. I believe this was the lvgl library which included moving the examples and demos folders into the src directory (unconfirmed). I am unsure if these changes were required to get my final versions to work. 
+
+The working version uses the NotoSansBold36.h font file. This file is sourced from the TFT_eSPI/examples folder. You can swap this for any of the other fonts in the TFT_eSPI/fonts folder.
 
 Sometimes uploading to the boards fails for some reason (or hangs up). It this happens, double-tap the reset button on the boards, then select the newly changed COM port. Re-upload and it should work. You may need to close the Serial Monitor if issues persist.
 
