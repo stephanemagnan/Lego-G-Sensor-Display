@@ -64,4 +64,5 @@ Required Components:
 Setup:
 - **Board 1** had an Li-Poly battery soldered on the back with a small SPST toggle switch on the positive line. The small SPST toggle must be set to On when using or charging the device.
 - **Board 2** must be plugged in to the Round Display. An external power supply must be plugged into Board 2. The On/Off switch on the Round Display must be set to On to receive power from the board. Otherwise, it does have a battery port on the back (not used here).
+- To power up boards using external power supply or battery, ensure that <code>while (!Serial); delay(10);</code> is commented out in both central and peripheral codes.
 
